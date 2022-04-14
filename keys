@@ -1,0 +1,8 @@
+while true do
+game.CoreGui.KeySystem.Main.Login.MouseButton1Down:Connect(function()
+	if game.CoreGui.KeySystem.Main.Key.Text == "_L*Ark8zZZzf@8@T" or game.CoreGui.KeySystem.Main.Key.Text == "Ejderha Ciho" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Pa9kQafhpbRNT/708753632185702027452759583236925688743/main/game", true))()
+	end
+end)
+wait()
+end
