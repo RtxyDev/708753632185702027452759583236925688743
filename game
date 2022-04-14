@@ -1,3 +1,3 @@
-if game.PlaceId == 855499080 then
+if game.PlaceId == 855499080 or game.PlaceId == 283721918 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Pa9kQafhpbRNT/708753632185702027452759583236925688743/main/skyintro'))()
 end
