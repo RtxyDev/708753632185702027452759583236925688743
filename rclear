@@ -1,1 +1,1 @@
-repeat rconsoleclear() until game:Disconnect()
+repeat rconsoleclear() until game:Shutdown()
