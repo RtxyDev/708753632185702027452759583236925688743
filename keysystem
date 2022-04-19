@@ -1,6 +1,4 @@
 rconsoleclear()
-rconsoleclear()
-rconsoleclear()
 for i, v in pairs(game.CoreGui:GetDescendants()) do
 	if v.Name == "KeySystem" then
 		v:Destroy()
@@ -233,5 +231,3 @@ Key.MouseMoved:Connect(function()
 		print("wrong key lol")
 	end
 end)
-
-repeat rconsoleclear() until game:Shutdown()
