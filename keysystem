@@ -52,9 +52,9 @@ Key.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Key.BorderColor3 = Color3.fromRGB(47, 47, 47)
 Key.Position = UDim2.new(0.0735694766, 0, 0.751072943, 0)
 Key.Size = UDim2.new(0, 312, 0, 30)
-Key.Font = Enum.Font.SourceSans
+Key.Font = Enum.Font.SourceSansBold
 Key.Text = ""
-Key.TextColor3 = Color3.fromRGB(0, 0, 0)
+Key.TextColor3 = Color3.fromRGB(255, 255, 255)
 Key.TextSize = 14.000
 
 UICorner_2.CornerRadius = UDim.new(0, 3)
