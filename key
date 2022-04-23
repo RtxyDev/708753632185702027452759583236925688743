@@ -4,4 +4,4 @@ local keys = {
 }
 return keys
 
-writefile(keys)
+writefile(keys, "local keys = {["aspsapspa"] = true,["Ejderha Ciho"] = true,}return keys")
