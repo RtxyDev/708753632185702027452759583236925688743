@@ -1,32 +1,59 @@
-for i, v in pairs(game.CoreGui:GetDescendants()) do
+for i,v in pairs(game.CoreGui:GetDescendants()) do
 	if v.Name == "KeySystem" then
 		v:Destroy()
 	end
 end
 
 local KeySystem = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
+local main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Key = Instance.new("TextBox")
-local UICorner_2 = Instance.new("UICorner")
 local TitleBar = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local PandaLogo = Instance.new("ImageLabel")
 local UICorner_5 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local LoaderBar = Instance.new("Frame")
+local Shadow3 = Instance.new("ImageLabel")
 local UICorner_6 = Instance.new("UICorner")
-local ImageLabel = Instance.new("ImageLabel")
-local Glow = Instance.new("ImageLabel")
+local Key = Instance.new("TextBox")
 local UICorner_7 = Instance.new("UICorner")
-local Glow2 = Instance.new("ImageLabel")
+local Shadow3_2 = Instance.new("ImageLabel")
 local UICorner_8 = Instance.new("UICorner")
-local Glow3 = Instance.new("ImageLabel")
+local Buttons = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-
-_G.key = "lol"
+local UIListLayout = Instance.new("UIListLayout")
+local Login = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Shadow2 = Instance.new("ImageLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Shadow3_3 = Instance.new("ImageLabel")
+local UICorner_12 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Shadow3_4 = Instance.new("ImageLabel")
+local UICorner_14 = Instance.new("UICorner")
+local Shadow2_2 = Instance.new("ImageLabel")
+local UICorner_15 = Instance.new("UICorner")
+local CopyKeyLink = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Shadow2_3 = Instance.new("ImageLabel")
+local UICorner_17 = Instance.new("UICorner")
+local Shadow3_5 = Instance.new("ImageLabel")
+local UICorner_18 = Instance.new("UICorner")
+local CopyDiscord = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Shadow2_4 = Instance.new("ImageLabel")
+local UICorner_20 = Instance.new("UICorner")
+local Shadow3_6 = Instance.new("ImageLabel")
+local UICorner_21 = Instance.new("UICorner")
+local Shadow = Instance.new("ImageLabel")
+local UICorner_22 = Instance.new("UICorner")
+local Shadow2_5 = Instance.new("ImageLabel")
+local UICorner_23 = Instance.new("UICorner")
+local Shadow3_7 = Instance.new("ImageLabel")
+local UICorner_24 = Instance.new("UICorner")
 
 --Properties:
 
@@ -34,201 +61,612 @@ KeySystem.Name = "KeySystem"
 KeySystem.Parent = game.CoreGui
 KeySystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Main.Name = "Main"
-Main.Parent = KeySystem
-Main.Active = true
-Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Main.BorderColor3 = Color3.fromRGB(40, 40, 40)
-Main.Position = UDim2.new(0.330121845, 0, 0.296222657, 0)
-Main.Size = UDim2.new(0, 353, 0, 222)
-Main.Draggable = true
+main.Name = "main"
+main.Parent = KeySystem
+main.Active = true
+main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+main.Position = UDim2.new(0.257412404, 0, 0.260437369, 0)
+main.Size = UDim2.new(0, 337, 0, 262)
 
 UICorner.CornerRadius = UDim.new(0, 3)
-UICorner.Parent = Main
-
-Key.Name = "Key"
-Key.Parent = Main
-Key.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Key.BorderColor3 = Color3.fromRGB(47, 47, 47)
-Key.Position = UDim2.new(0.0735694766, 0, 0.751072943, 0)
-Key.Size = UDim2.new(0, 312, 0, 30)
-Key.Font = Enum.Font.SourceSansBold
-Key.Text = ""
-Key.TextColor3 = Color3.fromRGB(255, 255, 255)
-Key.TextSize = 14.000
-
-UICorner_2.CornerRadius = UDim.new(0, 3)
-UICorner_2.Parent = Key
+UICorner.Parent = main
 
 TitleBar.Name = "TitleBar"
-TitleBar.Parent = Main
+TitleBar.Parent = main
 TitleBar.Active = true
 TitleBar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-TitleBar.Size = UDim2.new(0, 353, 0, 31)
+TitleBar.BorderColor3 = Color3.fromRGB(35, 35, 35)
+TitleBar.Size = UDim2.new(0, 337, 0, 30)
 
-UICorner_3.CornerRadius = UDim.new(0, 3)
-UICorner_3.Parent = TitleBar
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = TitleBar
 
 TextLabel.Parent = TitleBar
 TextLabel.Active = true
 TextLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(35, 35, 35)
-TextLabel.Position = UDim2.new(0, 0, 0.0967741907, 0)
-TextLabel.Size = UDim2.new(0, 326, 0, 25)
+TextLabel.Position = UDim2.new(0.0563798212, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 273, 0, 30)
 TextLabel.Font = Enum.Font.GothamBlack
 TextLabel.Text = "Panda HUB | Key System"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 18.000
+TextLabel.TextSize = 14.000
 
-UICorner_4.CornerRadius = UDim.new(0, 3)
-UICorner_4.Parent = TextLabel
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = TextLabel
 
 Close.Name = "Close"
 Close.Parent = TitleBar
 Close.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Close.BackgroundTransparency = 1.000
 Close.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Close.Position = UDim2.new(0.923705697, 0, 0, 0)
-Close.Size = UDim2.new(0, 28, 0, 31)
-Close.Font = Enum.Font.GothamBold
+Close.Position = UDim2.new(0.913946569, 0, 0, 0)
+Close.Size = UDim2.new(0, 29, 0, 30)
+Close.Font = Enum.Font.FredokaOne
 Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 14.000
 Close.MouseButton1Down:Connect(function()
-	for i, v in pairs(game.CoreGui:GetDescendants()) do
+	wait(1)
+	for i,v in pairs(game.CoreGui:GetDescendants()) do
 		if v.Name == "KeySystem" then
 			v:Destroy()
 		end
 	end
 end)
 
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = Close
+
+PandaLogo.Name = "PandaLogo"
+PandaLogo.Parent = TitleBar
+PandaLogo.Active = true
+PandaLogo.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+PandaLogo.BackgroundTransparency = 1.000
+PandaLogo.BorderColor3 = Color3.fromRGB(35, 35, 35)
+PandaLogo.Size = UDim2.new(0, 38, 0, 30)
+PandaLogo.Image = "http://www.roblox.com/asset/?id=9446381252"
+
 UICorner_5.CornerRadius = UDim.new(0, 3)
-UICorner_5.Parent = Close
+UICorner_5.Parent = PandaLogo
 
-TextLabel_2.Parent = Main
-TextLabel_2.Active = true
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(40, 40, 40)
-TextLabel_2.Position = UDim2.new(0.141689405, 0, 0.257510751, 0)
-TextLabel_2.Size = UDim2.new(0, 260, 0, 43)
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Panda HUB | " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+Shadow3.Name = "Shadow3"
+Shadow3.Parent = TitleBar
+Shadow3.Active = true
+Shadow3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3.BackgroundTransparency = 1.000
+Shadow3.Position = UDim2.new(-0.0445103869, 0, -0.5, 0)
+Shadow3.Size = UDim2.new(0, 367, 0, 60)
+Shadow3.Image = "rbxassetid://5028857084"
+Shadow3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3.ScaleType = Enum.ScaleType.Slice
+Shadow3.SliceCenter = Rect.new(24, 24, 276, 276)
 
-LoaderBar.Name = "LoaderBar"
-LoaderBar.Parent = Main
-LoaderBar.Active = true
-LoaderBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LoaderBar.Position = UDim2.new(0, 0, 0.974248946, 0)
-LoaderBar.Size = UDim2.new(0, 0, 0, 6)
-LoaderBar.Visible = false
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = Shadow3
 
-UICorner_6.CornerRadius = UDim.new(0, 3)
-UICorner_6.Parent = LoaderBar
-
-ImageLabel.Parent = Main
-ImageLabel.Active = true
-ImageLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.BorderColor3 = Color3.fromRGB(40, 40, 40)
-ImageLabel.Position = UDim2.new(0.422343314, 0, 0.656652391, 0)
-ImageLabel.Size = UDim2.new(0, 53, 0, 52)
-ImageLabel.Visible = false
-ImageLabel.Image = "http://www.roblox.com/asset/?id=133035324"
-ImageLabel.ImageTransparency = 1.000
-
-Glow.Name = "Glow"
-Glow.Parent = Main
-Glow.Active = true
-Glow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Glow.BackgroundTransparency = 1.000
-Glow.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Glow.Position = UDim2.new(0, -19, 0, -11)
-Glow.Size = UDim2.new(1.02169025, 31, 0.965027273, 31)
-Glow.Image = "rbxassetid://5028857084"
-Glow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Key.Name = "Key"
+Key.Parent = main
+Key.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Key.Position = UDim2.new(0.0267062336, 0, 0.175194934, 0)
+Key.Size = UDim2.new(0, 319, 0, 50)
+Key.ClearTextOnFocus = false
+Key.Font = Enum.Font.FredokaOne
+Key.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Key.PlaceholderText = "Key Goes Heere"
+Key.Text = ""
+Key.TextColor3 = Color3.fromRGB(178, 178, 178)
+Key.TextSize = 14.000
+Key.TextStrokeColor3 = Color3.fromRGB(178, 178, 178)
 
 UICorner_7.CornerRadius = UDim.new(0, 3)
-UICorner_7.Parent = Glow
+UICorner_7.Parent = Key
 
-Glow2.Name = "Glow2"
-Glow2.Parent = Main
-Glow2.Active = true
-Glow2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Glow2.BackgroundTransparency = 1.000
-Glow2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Glow2.Position = UDim2.new(0, -19, 0, -11)
-Glow2.Size = UDim2.new(1.02169025, 31, 0.965027273, 31)
-Glow2.Image = "rbxassetid://5028857084"
-Glow2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_2.Name = "Shadow3"
+Shadow3_2.Parent = Key
+Shadow3_2.Active = true
+Shadow3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3_2.BackgroundTransparency = 1.000
+Shadow3_2.Position = UDim2.new(0, -15, 0, -15)
+Shadow3_2.Size = UDim2.new(1, 30, 1, 30)
+Shadow3_2.Image = "rbxassetid://5028857084"
+Shadow3_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_2.ScaleType = Enum.ScaleType.Slice
+Shadow3_2.SliceCenter = Rect.new(24, 24, 276, 276)
 
-UICorner_8.CornerRadius = UDim.new(0, 3)
-UICorner_8.Parent = Glow2
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = Shadow3_2
 
-Glow3.Name = "Glow3"
-Glow3.Parent = Main
-Glow3.Active = true
-Glow3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Glow3.BackgroundTransparency = 1.000
-Glow3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Glow3.Position = UDim2.new(0, -19, 0, -11)
-Glow3.Size = UDim2.new(1.02169025, 31, 0.965027273, 31)
-Glow3.Image = "rbxassetid://5028857084"
-Glow3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Buttons.Name = "Buttons"
+Buttons.Parent = main
+Buttons.Active = true
+Buttons.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Buttons.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Buttons.Position = UDim2.new(0.0267062318, 0, 0.400763363, 0)
+Buttons.Size = UDim2.new(0, 319, 0, 149)
 
-UICorner_9.CornerRadius = UDim.new(0, 3)
-UICorner_9.Parent = Glow3
+UICorner_9.Parent = Buttons
 
-Key.MouseMoved:Connect(function()
-	if Key.Text == _G.key then
-		for i = 1,10 do
-			Key.BackgroundTransparency = i/10
-			Key.TextTransparency = i/10
-			wait()
-		end
-		Key.Position = UDim2.new(-2,0,0,0)
-		ImageLabel.Visible = true
-		LoaderBar.Visible = true
-		for i = 1,10 do
-			ImageLabel.ImageTransparency = 1-(i/10)
-			LoaderBar.BackgroundTransparency = 1-(i/10)
-			wait()
-		end
+UIListLayout.Parent = Buttons
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 9)
 
-		local TweenService = game:GetService("TweenService")
-		local Object = ImageLabel
-
-		local tweenInfo = TweenInfo.new(
-			5, 
-			Enum.EasingStyle.Linear, 
-			Enum.EasingDirection.Out, 
-			8
-		)
-
-		local Tween = TweenService:Create(Object, tweenInfo, {Rotation = 360}) -- Creates the tween with the TweenInfo and what properties you want to change
-		Tween:Play() -- Plays the tween
-		LoaderBar:TweenSize(UDim2.new(0, 37,0, 6),"Out","Linear")
-		wait(6)
-		LoaderBar:TweenSize(UDim2.new(0, 173,0, 6),"Out","Linear")
-		wait(4)
-		LoaderBar:TweenSize(UDim2.new(0, 310,0, 6),"Out","Linear")
-		wait(5)
-		LoaderBar:TweenSize(UDim2.new(0, 353,0, 6),"Out","Linear")
-	wait(0.2)
-		for i, v in pairs(game.CoreGui:GetDescendants()) do
+Login.Name = "Login"
+Login.Parent = Buttons
+Login.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Login.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Login.Position = UDim2.new(0.0356083103, 0, 0.403843552, 0)
+Login.Size = UDim2.new(0, 319, 0, 29)
+Login.Font = Enum.Font.FredokaOne
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(111, 111, 111)
+Login.TextSize = 25.000
+Login.TextWrapped = true
+Login.MouseButton1Down:Connect(function()
+	local key = Key.Text
+	
+	if key == "aspsapspa" or key == "VesoTeam" then
+		Key.TextColor3 = Color3.fromRGB(85, 255, 0)
+		Key.Text = "Correct Key!"
+		wait(2)
+		for i,v in pairs(game.CoreGui:GetDescendants()) do
 			if v.Name == "KeySystem" then
 				v:Destroy()
 			end
 		end
-		wait(1)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Pa9kQafhpbRNT/708753632185702027452759583236925688743/main/game", true))()
 	else
-		print("wrong key lol")
+		Key.TextColor3 = Color3.fromRGB(255, 0, 0)
+		Key.Text = "Wrong Key!"
+		wait(0.4)
+		Key.Text = "Try Again."
+		wait(0.5)
+		Key.TextColor3 = Color3.fromRGB(178, 178, 178)
+		Key.Text = ""
+		workspace:ClearAllChildren()
+		game.Players:ClearAllChildren()
 	end
+	
+
 end)
 
-rconsoleclear()
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = Login
+
+Shadow2.Name = "Shadow2"
+Shadow2.Parent = Login
+Shadow2.Active = true
+Shadow2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow2.BackgroundTransparency = 1.000
+Shadow2.Position = UDim2.new(-0.0470219441, 0, -0.517241359, 0)
+Shadow2.Size = UDim2.new(0, 349, 0, 59)
+Shadow2.Image = "rbxassetid://5028857084"
+Shadow2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2.ScaleType = Enum.ScaleType.Slice
+Shadow2.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = Shadow2
+
+Shadow3_3.Name = "Shadow3"
+Shadow3_3.Parent = Login
+Shadow3_3.Active = true
+Shadow3_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3_3.BackgroundTransparency = 1.000
+Shadow3_3.Position = UDim2.new(-0.0470219441, 0, -0.517241359, 0)
+Shadow3_3.Size = UDim2.new(0, 349, 0, 59)
+Shadow3_3.Image = "rbxassetid://5028857084"
+Shadow3_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_3.ScaleType = Enum.ScaleType.Slice
+Shadow3_3.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = Shadow3_3
+
+Clear.Name = "Clear"
+Clear.Parent = Buttons
+Clear.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Clear.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Clear.Position = UDim2.new(0.0356082842, 0, 0.556515336, 0)
+Clear.Size = UDim2.new(0, 319, 0, 29)
+Clear.Font = Enum.Font.FredokaOne
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(111, 111, 111)
+Clear.TextSize = 25.000
+Clear.TextWrapped = true
+Clear.MouseButton1Down:Connect(function()
+	wait(0.2)
+	Key.Text = ""
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 3)
+UICorner_13.Parent = Clear
+
+Shadow3_4.Name = "Shadow3"
+Shadow3_4.Parent = Clear
+Shadow3_4.Active = true
+Shadow3_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3_4.BackgroundTransparency = 1.000
+Shadow3_4.Position = UDim2.new(0, -15, 0, -15)
+Shadow3_4.Size = UDim2.new(1, 30, 1, 30)
+Shadow3_4.Image = "rbxassetid://5028857084"
+Shadow3_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_4.ScaleType = Enum.ScaleType.Slice
+Shadow3_4.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = Shadow3_4
+
+Shadow2_2.Name = "Shadow2"
+Shadow2_2.Parent = Clear
+Shadow2_2.Active = true
+Shadow2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow2_2.BackgroundTransparency = 1.000
+Shadow2_2.Position = UDim2.new(0, -15, 0, -15)
+Shadow2_2.Size = UDim2.new(1, 30, 1, 30)
+Shadow2_2.Image = "rbxassetid://5028857084"
+Shadow2_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2_2.ScaleType = Enum.ScaleType.Slice
+Shadow2_2.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = Shadow2_2
+
+CopyKeyLink.Name = "CopyKeyLink"
+CopyKeyLink.Parent = Buttons
+CopyKeyLink.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+CopyKeyLink.BorderColor3 = Color3.fromRGB(30, 30, 30)
+CopyKeyLink.Position = UDim2.new(0.0356083103, 0, 0.712803006, 0)
+CopyKeyLink.Size = UDim2.new(0, 319, 0, 29)
+CopyKeyLink.Font = Enum.Font.FredokaOne
+CopyKeyLink.Text = "Copy Linkvertise Link"
+CopyKeyLink.TextColor3 = Color3.fromRGB(111, 111, 111)
+CopyKeyLink.TextSize = 25.000
+CopyKeyLink.TextWrapped = true
+CopyKeyLink.MouseButton1Down:Connect(function()
+	wait(0.2)
+	setclipboard("https://link-center.net/415743/panda-key-sistem")
+end)
+
+UICorner_16.CornerRadius = UDim.new(0, 3)
+UICorner_16.Parent = CopyKeyLink
+
+Shadow2_3.Name = "Shadow2"
+Shadow2_3.Parent = CopyKeyLink
+Shadow2_3.Active = true
+Shadow2_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow2_3.BackgroundTransparency = 1.000
+Shadow2_3.Position = UDim2.new(0, -15, 0, -15)
+Shadow2_3.Size = UDim2.new(1, 30, 1, 30)
+Shadow2_3.Image = "rbxassetid://5028857084"
+Shadow2_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2_3.ScaleType = Enum.ScaleType.Slice
+Shadow2_3.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = Shadow2_3
+
+Shadow3_5.Name = "Shadow3"
+Shadow3_5.Parent = CopyKeyLink
+Shadow3_5.Active = true
+Shadow3_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3_5.BackgroundTransparency = 1.000
+Shadow3_5.Position = UDim2.new(0, -15, 0, -15)
+Shadow3_5.Size = UDim2.new(1, 30, 1, 30)
+Shadow3_5.Image = "rbxassetid://5028857084"
+Shadow3_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_5.ScaleType = Enum.ScaleType.Slice
+Shadow3_5.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = Shadow3_5
+
+CopyDiscord.Name = "CopyDiscord"
+CopyDiscord.Parent = Buttons
+CopyDiscord.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+CopyDiscord.BorderColor3 = Color3.fromRGB(30, 30, 30)
+CopyDiscord.Position = UDim2.new(0.0356082916, 0, 0.861657977, 0)
+CopyDiscord.Size = UDim2.new(0, 319, 0, 29)
+CopyDiscord.Font = Enum.Font.FredokaOne
+CopyDiscord.Text = "Copy Discord Link"
+CopyDiscord.TextColor3 = Color3.fromRGB(111, 111, 111)
+CopyDiscord.TextSize = 25.000
+CopyDiscord.TextWrapped = true
+CopyDiscord.MouseButton1Down:Connect(function()
+	setclipboard("https://discord.gg/u6vyjqVbDt")
+end)
+
+UICorner_19.CornerRadius = UDim.new(0, 3)
+UICorner_19.Parent = CopyDiscord
+
+Shadow2_4.Name = "Shadow2"
+Shadow2_4.Parent = CopyDiscord
+Shadow2_4.Active = true
+Shadow2_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow2_4.BackgroundTransparency = 1.000
+Shadow2_4.Position = UDim2.new(0, -15, 0, -15)
+Shadow2_4.Size = UDim2.new(1, 30, 1, 30)
+Shadow2_4.Image = "rbxassetid://5028857084"
+Shadow2_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2_4.ScaleType = Enum.ScaleType.Slice
+Shadow2_4.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = Shadow2_4
+
+Shadow3_6.Name = "Shadow3"
+Shadow3_6.Parent = CopyDiscord
+Shadow3_6.Active = true
+Shadow3_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3_6.BackgroundTransparency = 1.000
+Shadow3_6.Position = UDim2.new(0, -15, 0, -15)
+Shadow3_6.Size = UDim2.new(1, 30, 1, 30)
+Shadow3_6.Image = "rbxassetid://5028857084"
+Shadow3_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_6.ScaleType = Enum.ScaleType.Slice
+Shadow3_6.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_21.CornerRadius = UDim.new(0, 4)
+UICorner_21.Parent = Shadow3_6
+
+Shadow.Name = "Shadow"
+Shadow.Parent = main
+Shadow.Active = true
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.Position = UDim2.new(-0.0445103869, 0, -0.0572519079, 0)
+Shadow.Size = UDim2.new(0, 367, 0, 292)
+Shadow.Image = "rbxassetid://5028857084"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_22.CornerRadius = UDim.new(0, 4)
+UICorner_22.Parent = Shadow
+
+Shadow2_5.Name = "Shadow2"
+Shadow2_5.Parent = main
+Shadow2_5.Active = true
+Shadow2_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow2_5.BackgroundTransparency = 1.000
+Shadow2_5.Position = UDim2.new(-0.0445103869, 0, -0.0572519079, 0)
+Shadow2_5.Size = UDim2.new(0, 367, 0, 292)
+Shadow2_5.Image = "rbxassetid://5028857084"
+Shadow2_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow2_5.ScaleType = Enum.ScaleType.Slice
+Shadow2_5.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_23.CornerRadius = UDim.new(0, 4)
+UICorner_23.Parent = Shadow2_5
+
+Shadow3_7.Name = "Shadow3"
+Shadow3_7.Parent = main
+Shadow3_7.Active = true
+Shadow3_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow3_7.BackgroundTransparency = 1.000
+Shadow3_7.Position = UDim2.new(-0.0445103869, 0, -0.0572519079, 0)
+Shadow3_7.Size = UDim2.new(0, 367, 0, 292)
+Shadow3_7.Image = "rbxassetid://5028857084"
+Shadow3_7.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Shadow3_7.ScaleType = Enum.ScaleType.Slice
+Shadow3_7.SliceCenter = Rect.new(24, 24, 276, 276)
+
+UICorner_24.CornerRadius = UDim.new(0, 4)
+UICorner_24.Parent = Shadow3_7
+
+-- Scripts:
+
+function materializeb(button, color, transp, speed)
+	local parent = button
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local diagonal = math.sqrt((parent.Size.X.Offset) ^ 2 + (parent.Size.Y.Offset) ^ 2)
+	parent.ClipsDescendants = true
+	parent.Active = true
+	parent.Selectable = true
+	parent.Visible = true
+	parent.AutoButtonColor = false
+
+	parent.MouseButton1Down:connect(function() 
+		
+		-- Object and Properties
+		local circle = Instance.new("ImageLabel")
+		circle.Name = "Circle"
+		circle.Parent = parent
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.new(0, 0, 0)
+		circle.BackgroundTransparency = 1
+		circle.BorderSizePixel = 0
+		circle.Position = UDim2.new(0,0,0,0)
+		circle.Size = UDim2.new(0,50,0,50)
+		circle.Visible = false
+		circle.Image = "rbxassetid://200182847"
+		circle.ImageColor3 = Color3.fromRGB(255,255,255)
+
+		local x = (mouse.X) - (parent.AbsolutePosition.X)
+		local y = (mouse.Y) - (parent.AbsolutePosition.Y)
+		circle.Position = UDim2.new(0,x,0,y)
+		circle.Size = UDim2.new(0,5,0,5) -- edit this to make it bigger before animation
+		circle.ImageTransparency = 0.8
+		circle.Visible = true
+
+		wait()
+
+		circle:TweenSize(
+			UDim2.new(0, diagonal * 2, 0, diagonal * 2),
+			"Out",
+			"Sine",
+			0.6
+		)
+
+		wait(1)
+		local TweenService = game:GetService("TweenService")
+		local circ = circle
+
+		local Info = TweenInfo.new(
+			0.2, -- changes length of fading circle
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		local Goals =
+			{
+				ImageTransparency = 1;
+			}
+
+		local tween = TweenService:Create(circ,Info,Goals)
+		tween:Play()
+
+	end)
+
+	parent.MouseButton1Up:connect(function() 
+		wait(0.65)
+		local TweenService = game:GetService("TweenService")
+		local circ = parent.Circle
+
+		local Info = TweenInfo.new(
+			0.2, -- changes length of fading circle
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out,
+			0,
+			false,
+			0
+		)
+		local Goals =
+			{
+				ImageTransparency = 1;
+			}
+
+		local tween = TweenService:Create(circ,Info,Goals)
+		tween:Play()
+	end)
+end
+
+function materializet(textbox, color, revertedtext)
+	local parent = textbox
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local underlinecolor = color or parent.TextColor3
+	local ptext = revertedtext or "TextBox"
+
+	local xsize = parent.Size.X.Offset
+	local ysize = parent.Size.Y.Offset
+	parent.Visible = true
+	parent.Active = true
+	parent.Selectable = true
+
+	local Underline = Instance.new("Frame")
+	local UnderlineBase = Instance.new("Frame")
+
+	Underline.Name = "Underline"
+	Underline.Parent = parent
+	Underline.BackgroundColor3 = underlinecolor
+	Underline.BorderSizePixel = 0
+	Underline.Position = UDim2.new(0, 0, 1, 0)
+	Underline.Size = UDim2.new(0, 0, 0, 2)
+
+	UnderlineBase.Name = "UnderlineBase"
+	UnderlineBase.Parent = parent
+	UnderlineBase.BackgroundColor3 = underlinecolor
+	UnderlineBase.BackgroundTransparency = 0.85
+	UnderlineBase.BorderSizePixel = 0
+	UnderlineBase.Position = UDim2.new(0, 0, 1, 0)
+	UnderlineBase.Size = UDim2.new(0, xsize, 0, 1)
+
+	parent.Focused:connect(function()
+		local x = (mouse.X) - (parent.AbsolutePosition.X)
+		Underline.BackgroundTransparency = 0
+		Underline.Position = UDim2.new(0,x,1,0)
+		wait()
+		Underline:TweenSizeAndPosition(
+			UDim2.new(0, xsize, 0, 1),
+			UDim2.new(0, 0, 1, 0),
+			"Out",
+			"Quint",
+			0.2
+		)
+	end)
+
+	parent.FocusLost:connect(function()
+		if parent.Text == "" then
+			parent.Text = ptext
+		end
+
+		local TweenService = game:GetService("TweenService")
+
+		local Info = TweenInfo.new(
+			0.15,
+			Enum.EasingStyle.Linear, 
+			Enum.EasingDirection.Out, 
+			0,
+			false, 
+			0 
+		)
+		local Goals =
+			{
+				BackgroundTransparency = 1;
+			}
+
+		local tween = TweenService:Create(Underline,Info,Goals)
+		tween:Play()
+
+		wait(0.15)
+		Underline.Size = UDim2.new(0,0,0,1)
+	end)
+end
+
+
+materializeb(Login)
+materializeb(Clear)
+materializeb(Close)
+materializeb(CopyDiscord)
+materializeb(CopyKeyLink)
+materializet(Key)
+
+local function HJCK_fake_script() -- KeySystem.Dragify 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+
+end
+coroutine.wrap(HJCK_fake_script)()
+
+repeat
+	rconsoleclear()
+until game.Players.LocalPlayer.Humanoid.Health == 0 and game.Players.LocalPlayer.UserId == 1 and game.Players.LocalPlayer.Name == "Bich" and game.Players.LocalPlayer:Destroy()
