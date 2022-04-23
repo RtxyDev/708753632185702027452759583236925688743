@@ -1,0 +1,6 @@
+keys = {
+[asdasd123124565464] = true, -- Random key!
+[amogus] = true,
+[sheesh] = true
+}
+return keys
