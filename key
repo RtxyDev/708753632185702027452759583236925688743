@@ -1,6 +1,5 @@
 local keys = {
 	["aspsapspa"] = true,
 	["Ejderha Ciho"] = true,
-	["Skie"] = true
 }
 return keys
