@@ -3,5 +3,3 @@ local keys = {
 	["Ejderha Ciho"] = true,
 }
 return keys
-
-writefile(keys, "local keys = {["aspsapspa"] = true,["Ejderha Ciho"] = true,}return keys")
