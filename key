@@ -1,5 +1,24 @@
 local keys = {
-	[aspsapspa] = true,
-	[Ejderha Ciho] = true,
+	["aspsapspa"] = true,
+	["Ejderha Ciho"] = true,
 }
 return keys
+
+if game:GetService("CoreGui").KeySystem.main.Key.Text == keys then
+game:GetService("CoreGui").KeySystem.main.Key.TextColor3 = Color3.fromRGB(85, 255, 0)
+game:GetService("CoreGui").KeySystem.main.Key.Text = "Correct Key!"
+wait(2)
+for i,v in pairs(game.CoreGui:GetDescendants()) do
+	if v.Name == "KeySystem" then
+		v:Destroy()
+	end
+end
+else
+game:GetService("CoreGui").KeySystem.main.Key.TextColor3 = Color3.fromRGB(255, 0, 0)
+game:GetService("CoreGui").KeySystem.main.Key.Text = "Wrong Key!"
+wait(0.4)
+game:GetService("CoreGui").KeySystem.main.Key.Text = "Try Again."
+wait(0.5)
+game:GetService("CoreGui").KeySystem.main.Key.TextColor3 = Color3.fromRGB(178, 178, 178)
+game:GetService("CoreGui").KeySystem.main.Key.Text = ""
+end
